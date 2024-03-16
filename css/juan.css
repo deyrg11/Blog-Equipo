@@ -1,0 +1,193 @@
+body {
+      
+      background-color: rgb(255, 255, 144);/* background-color: #f5f5f5; */
+
+    font-family: cursive;
+}
+
+.header1 {
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    background-color: rgb(156, 156, 255);
+    border-radius: 20px;
+    margin-left: 5%;
+    /* Utilizando un porcentaje para el margen izquierdo */
+    margin-right: 5%;
+    /* Utilizando un porcentaje para el margen derecho */
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.botonInicio {
+    background-color: rgb(168, 107, 107);
+    /* Cambiar el color del botón */
+    color: white;
+    /* Cambiar el color del texto del botón */
+    padding: 10px 20px;
+    /* Ajustar el espaciado del botón */
+    border: none;
+    /* Eliminar el borde del botón si no es necesario */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar por encima del botón */
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.botonInicio:hover {
+    background-color: rgb(166, 64, 64);
+    /* Cambiar color de fondo en hover */
+}
+
+.nombre h2 {
+    text-align: center;
+
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.parrafo {
+    width: 45%;
+    /* Ancho del párrafo */
+
+}
+
+.video {
+    width: 45%;
+    /* Ancho del video */
+
+}
+
+.datos_personales {
+    margin-left: 10px;
+}
+
+.escuela {
+    margin-left: 10px;
+}
+
+.musica_texto{
+    margin-left: 10px;
+
+}
+
+.musica {
+display: flex;
+  }
+  
+  .columna {
+    flex: 1; /* Las columnas se expanden para ocupar el mismo espacio */
+    margin-right: 20px; /* Espacio entre las columnas */
+
+  }
+  
+  .columna:last-child {
+    margin-right: 0; /* Elimina el margen derecho de la última columna */
+
+  }
+
+.redes {
+    text-align: center;
+}
+
+
+/*--------------------------------------------*/
+/*carrusel familia*/
+
+.contenedor-slider{
+  width: 80%;
+  margin: auto;
+}
+
+.slider img{
+max-width: 100%;
+height: auto;
+display: block;
+margin: 0 auto;
+
+}
+.slider {
+  display: flex;
+  overflow-x: auto; /* Permite desplazar el contenido horizontalmente */
+  scroll-snap-type: x mandatory; /* Hace que los elementos del slider se detengan en posiciones fijas */
+}
+
+.slide {
+  scroll-snap-align: center;
+  /*scroll-snap-align: start; /* Alinea los elementos del slider */
+  flex: 0 0 auto; /* Hace que los elementos no se agranden para ajustarse al contenedor */
+  width: 50%; /* Ancho total de cada slide */
+  flex-shrink: 0; /* Evita que los elementos del slider se achiquen */
+  height: 100%;
+}
+
+
+/*--------------------------------------------*/
+/*carrusel 2*/
+.contenedor-slider2{
+  width: 80%;
+  margin: auto;
+}
+
+.slider2 img{
+max-width: 100%;
+width: auto;
+display: block;
+margin: 0 auto;
+}
+
+.slider2 {
+  display: flex;
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory;
+}
+
+.slide2 {
+  scroll-snap-align: center;
+  flex: 0 0 auto; 
+  width: 33%;
+  flex-shrink: 0; 
+  height: 100%;
+  margin-right: 10px;
+}
+/*--------------------------------------------*/
+/*carrusel 3*/
+.contenedor-slider3{
+  width: 80%;
+  margin: auto;
+}
+
+.slider3 img{
+max-width: 100%;
+width: auto;
+display: block;
+margin: 0 auto;
+
+}
+
+.slider3 {
+  display: flex;
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory;
+}
+
+.slide3 {
+  scroll-snap-align: center;
+  flex: 0 0 auto; 
+  width: 33%;
+  flex-shrink: 0; 
+  height: 100%;
+  margin-right: 10px;
+}
+/*--------------------------------------------*/

@@ -1,0 +1,41 @@
+body{
+    background-color:rgb(243, 165, 218);
+ } 
+ .regresar button{
+    background-color: rgb(130, 17, 114);
+    color: white;
+    border-radius: 25px;
+    font-size: 20px;
+    display: flex;
+ }
+ .regresar button:hover{
+ background-color: black;
+ } 
+  
+ video{
+    width: 400px;
+     height:400px;
+    }
+    .center{
+       text-align: center;
+    }
+    p {
+      font-family: cursive;
+    }
+    header{
+      text-align: center;
+    }
+    h2{
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: auto;
+      border: 0px solid rgb(0, 0, 0);
+      height: 30px;
+      width: 30px;
+  
+    }
+    .contenedor{
+      display: flex;
+    }
