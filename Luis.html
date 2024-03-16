@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Luis Abraham Nuñez Bravo</h1>
+    </header>
+    <div class="contenido">
+        <div class="descripcion">
+            <h3>Datos personales</h3>
+    <ul>
+    <li>Nombre completo:<strong>Luis Abraham Nuñez Bravo</strong></li>
+    <li>Fecha de nacimient:<strong>16/07/2003</strong></li>
+    <li>Lugar de nacimiento:<strong>Córdoba,ver</strong></li>
+    <li>Direccion:<strong>Av 2A entre calles 25 y 27 #2508 Col.Miguel Hidalgo</strong></li>
+  </ul>
+
+            <h1><strong>¿QUIEN SOY?</strong></h1>
+            <p>Hola a todos mi nombre es Luis Abraham Nuñez Bravo, soy estudiante del 
+        INSTITUTO TECNOLOGICO DE ORIZABA de la carrera de Ingenieria de Sistemas computacionales.
+        Actualmente tengo 20 años y soy originario de la ciudad de Córdoba, veracruz.
+        Mis pasatiempos favoritos son jugar futbol que de echo estoy en un equipo en cual juego los dias
+        sabados por la noche, los videojuegos como son los de deportes y los shooters, y ademas me gista escuchar musica
+        pop y rock en ingles aunque me declino mas por la musica en ingles</p>
+
+            <h1><strong>¿DONDE ESTUDIE?</strong></h1>
+    <li>Primaria:<strong>Jacinta Carrillo de Castro</strong></li>
+    <li>Secundaria:<strong>Enrique C. Rebsamen 1°,2°</strong></li>
+    <li>Secundaria: <strong>Enrique Herrera Moreno Fed #1  3°</strong></li>
+    <li>Preparatoria:<strong>CBTIS 47</strong></li>
+    <li>Universidad:<strong>Instituto Tecnologico de Orizaba</strong></li>
+        </div>
+
+        <div class="contenido-multimedia">
+            <div class="video">
+                <h2>Video Destacado</h2>
+                <iframe width="560" height="315" src="video/PresentacionLuis.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="audio">
+                <h2>Cancion favorita</h2>
+                <audio controls>
+                    <source src="musica/Ed Sheeran - Photograph (Official Music Video)_nSDgHBxUbVQ.mp3" type="audio/mpeg">
+
+                </audio>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                  <img src="img/Luis.jpeg" alt="Imagen 1">
+                  <img src="img/EquipoFut.jpg" alt="Imagen 2">
+                  <img src="img/Compañeros.jpg" alt="Imagen 3">
+                </div>
+                <script>
+                    var slideIndex = 0;
+                    showSlide(slideIndex);
+                  
+                    function prevSlide() {
+                      showSlide(slideIndex -= 1);
+                    }
+                  
+                    function nextSlide() {
+                      showSlide(slideIndex += 1);
+                    }
+                  
+                    function showSlide(n) {
+                      var slides = document.querySelectorAll('.carousel-slide img');
+                      if (n >= slides.length) { slideIndex = 0; }
+                      if (n < 0) { slideIndex = slides.length - 1; }
+                      for (var i = 0; i < slides.length; i++) {
+                        slides[i].style.display = 'none';
+                      }
+                      slides[slideIndex].style.display = 'block';
+                    }
+                  
+                    setInterval(function() {
+                      nextSlide();
+                    }, 2000); 
+                  </script>
+              </div>
+        </div>
+    
+        </div>
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/profile.php?id=100006705439174&mibextid=ZbWKwL" class="icono-facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/luisnunez2969?igsh=MW1pNHJ4MDBsZjE1bg==" class="icono-instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/522717305800" class="icono-whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="boton-regresar"><a href="index.html"><i class="fas fa home"></i> Regresar</a>
+        </div>
+    </footer>
+</body>
+
+</html>
